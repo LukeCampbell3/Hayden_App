@@ -6,20 +6,6 @@ import noisereduce as nr
 import soundfile as sf  # This library is typically used for writing files in librosa
 import argparse
 
-
-'''def process_song(input_path, output_path):
-    # Check if vocals.wav already exists
-    vocals_path = os.path.join(output_path, "vocals.wav")
-    if os.path.exists(vocals_path):
-        print(f"Vocals already exist: {vocals_path}")
-        return vocals_path
-
-    # Spleeter processing here
-    separator = Separator('spleeter:2stems')
-    separator.separate_to_file(input_path, output_path)
-    print(f"Processed: {vocals_path}")
-    return vocals_path'''
-
 def separate_audio(input_audio_path, output_directory):
     print(f"Input audio path: {input_audio_path}")
     print(f"Output directory: {output_directory}")
